@@ -16,19 +16,19 @@ export default function NavBar() {
                   Dashboard
                 </Link>
                 <Link
-                  href='/about'
+                  href='/meals'
                   className='text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'>
-                  About
+                  Meals
                 </Link>
                 <Link
-                  href='/blog'
+                  href='/meals/share'
                   className='text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'>
-                  Blog
+                  Share
                 </Link>
                 <Link
-                  href='/blog/post'
+                  href='/community'
                   className='text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'>
-                  Calendar
+                  Community
                 </Link>
               </div>
             </div>
