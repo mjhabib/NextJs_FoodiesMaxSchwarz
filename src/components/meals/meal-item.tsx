@@ -2,23 +2,15 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import classes from './meal-item.module.css';
-
-interface Props {
-  id: number;
-  title: string;
-  slug: string;
-  image: string;
-  summary: string;
-  creator: string;
-}
+import { MealTypes } from '@src/types/mealTypes';
 
 export default function MealItem({
-  title,
   slug,
+  title,
   image,
   summary,
   creator,
-}: Props) {
+}: MealTypes) {
   return (
     <article className={classes.meal}>
       <header>
