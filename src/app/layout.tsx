@@ -1,4 +1,4 @@
-import MainHeader from '@src/components/main-header/main-header';
+import { MainHeader } from '@src/components';
 import { Metadata } from 'next';
 import { ReactNode } from 'react';
 import './globals.css';

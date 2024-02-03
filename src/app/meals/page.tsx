@@ -1,4 +1,4 @@
-import MealsGrid from '@src/components/meals/meals-grid';
+import { MealsGrid } from '@src/components';
 import { getAllMeals } from '@src/lib/meals';
 import { Suspense } from 'react';
 import Link from 'next/link';
