@@ -1,6 +1,5 @@
 import MealsGrid from '@src/components/meals/meals-grid';
-import { getMeals } from '@src/lib/meals';
-import { MealTypes } from '@src/types/mealTypes';
+import { getAllMeals } from '@src/lib/meals';
 import { Suspense } from 'react';
 import Link from 'next/link';
 import classes from './page.module.css';
@@ -8,7 +7,7 @@ import MealsLoadingPage from './loading-out';
 
 // with this separate function, we have full control over the fetching part of our data for purposes like adding loading components
 async function Meals() {
-  const meals = (await getMeals()) as MealTypes[];
+  const meals = await getAllMeals();
   return <MealsGrid meals={meals} />;
 }
 
